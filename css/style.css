@@ -1,0 +1,387 @@
+/*BASE STYLES*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, del, dfn, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+body {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 90%;
+	color: grey;
+}
+h1 {
+	font-family: 'Sacramento', cursive;
+	font-size: 6vw;
+	font-weight: 100;
+}
+h2 {
+	font-family: 'Sacramento', cursive;
+	font-size: 7.5vw;	
+	color:#ef4e94;
+}
+h3 {
+	font-family: 'Sacramento', cursive;
+	font-size: 5.7vw;
+	font-weight: 100;
+	padding: 3% 0;
+	color:#ef4e94;
+}
+p {
+	line-height: 1.5em;
+	padding-bottom: 8%;
+}
+a:link, a:visited {
+	text-decoration: none;
+}
+
+/*MOBILE MENU*/
+#mobile-menu div {
+	width: 25px;
+	height: 2px;
+	background-color: #fff;
+	margin: 3px auto;
+}
+
+/*HEADER*/
+header {
+	padding: 3%;
+	background: url("../images/img_bg_1.jpg") no-repeat;
+	background-size: cover;
+	min-height: 50vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color:#fff;
+}
+header h2 {
+	align-self:flex-end;
+	color:#fff;
+}
+header h2, header p {
+	flex-basis:100%;
+	text-align: center;
+}
+header p {
+	align-self:flex-start;
+}
+
+/*NAV*/
+nav {
+	font-weight: 100;
+	margin: 5% auto;
+	text-transform: uppercase;
+	display: none;
+	flex-basis: 80%;
+	text-align: center;
+}
+nav a {
+	color: rgb(239, 220, 220);
+	display: block;
+	padding: 1% 0;
+	margin: 3px;
+	background-color:#ef4e94;
+	border-radius: 50px;
+}
+nav a:hover {
+	color: #fff;
+}
+
+/*HELLO SECTION*/
+#hello {
+	padding:5% 4%;
+	text-align: center;
+	min-height: 100vh;
+}
+#hello img {
+	width: 115px;
+	height: 115px;
+	border-radius: 50%;
+	margin: auto;
+	display:block;
+}
+p.date{
+	font-size: 120%;
+	color: black;
+	padding-bottom: 3%;
+	font-weight: 400;
+}
+.heart {
+	font-size: 1.4em;
+	display:none;
+}
+.greeting {
+	text-transform: capitalize;
+}
+
+/*ATTEND*/
+#attendence {
+	padding:4% 0;
+	text-align: center;
+	background-image: url("../images/img_bg_2.jpg");
+	background-size: cover;
+	color: #fff;
+	min-height: 30vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#attendence h2 {
+	color: #fff;
+}
+#attendence input {
+	background-color: rgba(255, 255, 255, 0.459);
+	font-size: 100%;
+	border: none;
+	padding:2.5%;
+	margin-bottom:2%;
+	width: 95%;
+	color: white;
+}
+#attendence input[type=submit] {
+	border:none;
+	background-color:#ef4e94;
+	text-transform: uppercase;
+	border-radius: 50px;
+	width: 100%;
+	color:white;
+}
+#attendence form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin: 0 auto;
+	width: 90%;
+}
+#attendence p {
+	color: rgba(255, 255, 255, 0.598);
+}
+
+/*CONTACT*/
+#contact h2 {
+	font-family: 'Work Sans', sans-serif;
+	color: #000;
+	font-weight: 100;
+	padding:0 0 3% 3%;
+	font-size: 5vw;
+}
+#contact p {
+	display: flex;
+	align-items: center;
+	color: #ef4e94;
+	padding-left: 3%;
+}
+#contact img {
+	display: block;
+	padding-right: 3%;
+}
+#contact > p:nth-child(2) {
+	max-width: 223px;
+	color: grey;
+}
+
+/*MAP*/
+iframe {
+	width: 100%;
+	min-height: 25vh;
+}
+
+/*FOOTER*/
+footer{
+	padding:4%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	flex-basis: 100%;
+}
+footer p {
+	padding-bottom: 2%;
+}
+footer li a {
+	display: block;
+}
+footer ul {
+	display: flex;
+}
+footer ul{
+	width: 35%;
+	max-width: 300px;
+	justify-content: space-between;
+}
+footer span{
+	color: #ef4e94;
+}
+
+#backToTop {
+	position: fixed;
+	bottom: 30px;
+	right: -50px;
+	color: rgb(255, 255, 255);
+	background-color:  rgb(87, 87, 87);
+	cursor: pointer;
+	padding: 18px;
+	border-radius: 5px;
+	font-size: 1em;
+	box-shadow: 5px 4px 10px #888888;
+}
+
+#backToTop a{
+	color: rgb(255, 255, 255);
+}
+
+/*---------Media Query----------*/
+
+/*----- Tablet - 600px to 990px-----*/
+@media only screen and (min-width: 600px) {
+	/*HEADER*/
+	header h2 {
+		font-size: 5vw;
+	}
+
+	/*HELLO SECTION*/
+	#hello .groom {
+		display: flex;
+		text-align: right;
+	}
+	.bride div, .groom div {
+		flex-basis: 70%;
+	}
+	#hello .bride {
+		display: flex;
+		text-align: left;
+	}
+	.groom img {
+		order:1;
+	}
+
+	/*ATTEND*/
+	#attendence > p {
+		padding-bottom: 2%;
+	}
+
+	/*CONTACT*/
+	#contact h2 {
+		font-size: 3.8vw;
+	}	
+}
+  
+/*----- Desktop - 990px and up -----*/
+@media only screen and (min-width: 990px) {
+	/*BASE STYLES*/
+	h1 {
+		font-size: 4vw;
+	}
+	h2 {
+		font-size: 3.5vw;
+	}
+	h3 {
+		font-size: 2.8vw;
+	}
+	p {
+		padding: 0;
+	}
+	/*HEADER*/
+	header h2 {
+		font-size: 6vw;
+	}
+	/*MOBILE MENU*/
+	#mobile-menu div {
+		display:none;
+	}
+
+	/*NAV*/
+	nav {
+		display: block;
+		flex-basis: 35%;
+		padding-top: 2%;
+		margin:0;
+	}
+	nav a {
+		background-color:transparent;
+		padding: 0;
+	}
+	nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	/*HELLO SECTION*/
+	#hello {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		min-height: 30vh;
+	}
+	#hello img {
+		margin: 6% 0;
+	}
+	#hello h2, 	#hello .date, 	#hello .invite{
+		flex-basis: 100%;
+	}
+	#hello .invite{
+		padding-bottom:3%;
+	}
+	.groom, .bride {
+		flex-basis: 45%;
+	}
+	.bride div, .groom div {
+		padding: 6%;
+	}
+	.bride {
+		position: relative;
+	}
+	.heart {
+		background-color: #fff;
+		color:#ef4e94;
+		height: 5px;
+		width: 5px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;/*relative to container*/
+		top: 19%;
+		left: -7.2%;
+	}
+	.date{
+		padding-bottom: 0%;
+	}
+
+	/*ATTEND*/
+	#attendence {
+		padding: 0;
+	}
+	#attendence form {
+		flex-direction:row;
+		width: 75%;
+	}
+	#attendence input {
+		flex-basis: 28%;
+	}
+
+	/*CONTACT*/
+	#contact {
+		padding-top: 5%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		min-height: 40vh;
+	}
+	#contact h2 {
+		text-align: center;
+		flex-basis: 100%;
+	}	
+	#contact p {
+		flex-basis:20%;
+		padding-bottom: 5%;
+	}
+
+	/*MAP*/
+	iframe {
+		min-height: 35vh;
+	}
+
+
+}
